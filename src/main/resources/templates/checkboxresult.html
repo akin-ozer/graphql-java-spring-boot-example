@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Demo result App</title>
+</head>
+<body>
+<table>
+    <tr th:each="authori : ${checkBoxAuthorList}">
+        <td th:text="${authori.firstName}"></td>
+        <td th:text="${authori.lastName}"></td>
+        <td th:text="${authori.id}"></td>
+    </tr>
+
+</table>
+</body>
+</html>
